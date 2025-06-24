@@ -1,0 +1,4 @@
+tensofrlow
+numpy
+matplotlib
+opencv-python
