@@ -3,12 +3,6 @@ const HairDetails = require('../models/hairDetailModel');
 const HairImage = require('../models/hairImgModel');
 const HistoryModel = require('../models/historyModel');
 const NlpResponse = require('../models/nlpResponseModel');
+const Chat = require('../models/chatModel');
 
-/*
-1. upload image and hair data on sign up
-and predict with the information and send back result 
-2. Edit hair information
-3. Predict hair images
-4. Add, delete and get history
-5. save nlp req and respone that the frontend processes from gpt
-*/
+//handle anything that has to do with the chatting from storing the chats to delete and share and copy
