@@ -42,7 +42,7 @@ const signIn = async(req, res) => {
         if (!isCorrectPassword) return res.status(400).json({message: 'Wrong Password'})
         const auth_token = generateToken({id: user._id});
         res.status(200).json({
-            message: 'Account created succesfully!',
+            message: 'Login succesfully!',
             auth_token,
             name: fullName
         });

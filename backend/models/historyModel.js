@@ -4,9 +4,10 @@ const objectId = schema.Types.ObjectId;
 
 const historySchema = new schema({
     user:           {type: objectId, ref: 'User', required: true},
+    message:        {type: String},
     imageData:      {type: objectId, ref: 'HairImage'},
     hairData:       {type: objectId, ref: 'HairData'},
-    nlpResponse:    {type: objectId, ref: 'NlpData'}
+    nlpData:    {type: objectId, ref: 'NlpData'}
 }, {timestamps: true});
 
 module.exports = mongoose.model('HairHistory', historySchema);

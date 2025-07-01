@@ -16,7 +16,7 @@ const hairDetailSchema = new schema({
     enviromentalFactors:    {type: String, enum: ['Yes', 'No']},
     smoking:                {type: String, enum: ['Yes', 'No']},
     weightLoss:             {type: String, enum: ['Yes', 'No']},
-    hairLoss:               {type: Number, enum: [0 , 1]},//prediction
+    hairLoss:               {type: Number, enum: ['Yes', 'No']},//prediction
 }, {timestamps: true});
 
 module.exports = mongoose.model('HairData', hairDetailSchema);

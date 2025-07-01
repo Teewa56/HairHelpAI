@@ -8,4 +8,4 @@ class PredictHairInfo:
         prediction = model.predict(data)
         print(prediction)
         joblib.dump(model, 'AI_model/models/hair_loss_model.pkl')
-        return prediction
+        return prediction['Yes', 'No']
