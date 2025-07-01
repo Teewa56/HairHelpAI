@@ -1,5 +1,5 @@
 from flask import Flask
-from AI_model.api.api_routes import api
+from api.api_routes import api
 
 def create_app():
     app = Flask(__name__)

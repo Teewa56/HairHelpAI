@@ -31,3 +31,5 @@ const port = process.env.PORT;
 connectDB().then(() => 
     server.listen(port, () => console.log(`Server is listening at port ${port}`))
 ).catch((error) => console.log(`Server Error: ${error}`));
+
+module.exports = app;
